@@ -21,6 +21,8 @@ sinadef_clean <- sinadef_raw %>%
   )
 
 saveRDS(sinadef_clean, "proc/SINADEF_DATOS_ABIERTOS_clean.rds")
+# xz es un formato de compresión que R lee y escribe nativamente
+write_csv(sinadef_clean, "proc/SINADEF_DATOS_ABIERTOS_clean.csv.xz")
 
 table(sinadef_clean$muerte_violenta, useNA = "ifany")
 

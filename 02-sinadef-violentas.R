@@ -14,9 +14,15 @@ sinadef_violentas <- readRDS("proc/SINADEF_DATOS_ABIERTOS_clean.rds") %>%
   )
 
 saveRDS(sinadef_violentas, "proc/SINADEF_DATOS_ABIERTOS_violentas.rds")
+write_csv(
+  sinadef_violentas, 
+  "proc/SINADEF_DATOS_ABIERTOS_violentas.csv"
+)
 
 # Nacionales
 table(sinadef_violentas$anio)
+
+# Gráficos exploratorios
 
 # Por año y semana epi
 sinadef_violentas %>% 
