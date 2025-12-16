@@ -5,4 +5,5 @@ Datos de: https://files.minsa.gob.pe/s/Ae52gBAMf9aKEzK (descargados el 2025/12/1
 
 Algunos de los datos en formato CSV están comprimidos usando XZ que R puede leer y escribir nativamente, para que los archivos puedan ser puestos sin problema en github.
 
+En [orig/(orig/) están los datos originales, en [proc/](proc/) los datos generados/procesados, y en [plots/](plots/) algunos gráficos
 
